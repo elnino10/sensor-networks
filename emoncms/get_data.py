@@ -24,5 +24,6 @@ if __name__ == "__main__":
     if not api_key:
         raise SystemExit("EMONCMS_API_KEY variable was not set")
 
-    url = f"https://emoncms.org/feed/timevalue.json?id=545961&apikey={api_key}"
+    # url = f"https://emoncms.org/feed/timevalue.json?id=545961&apikey={api_key}"
+    url = f"https://emoncms.org/feed/list.json?meta=1&apikey={api_key}"
     get_data(url)
